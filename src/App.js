@@ -1,14 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import _ from 'loadsh'
+import _u from 'underscore'
 
 function App() {
-  const arr = ['hello ', 'world!']
+  const arr1 = ['hello ', 'world!']
   const t = _.join(arr)
+  const arr = ['Hi ', ' Abo']
+  const str = _u.join(arr)
   return (
     <div className="App">
       <header className="App-header">
         <h2>Hello feature</h2>
+        <p>God:{str}</p>
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Hello + Dev + feature</h1>
         <p>
